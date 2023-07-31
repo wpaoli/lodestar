@@ -6,31 +6,6 @@ const {errorHandler} = require('./middleware/errorMiddleware.js');
 
 const connectDB = require('./config/db')
 
-//Playng with the date stuff
-
-//Import the function initially
-// const {format} = require('date-fns');
-// //today's date
-// const today =format(new Date(),'dd.MM.yyyy');
-// console.log(today);
-
-// 👇️ Example date and time in UTC
-const utcDate = '2022-11-02T03:51:06.441Z';
-
-const date = new Date(utcDate);
-
-// console.log(date.toLocaleString());
-
-
-//playing with examples
-let stringInput = "2021-06-10T02:20:50+00:00";
-let timeZone = "America/Los_Angeles";
-const dateObject = new Date(utcDate).toLocaleString("en-US", {
-  timeZone,
-});
-
-console.log(dateObject); // Prints: 6/9/2021, 7:20:50 PM
-
 
 connectDB()
 
